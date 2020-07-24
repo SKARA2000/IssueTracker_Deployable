@@ -4,7 +4,7 @@ const { MongoClient } = require('mongodb');
 let db;
 
 async function connectToDB() {
-    const url = process.env.DB_URL || 'mongodb+srv://Skara007:Steve%40Jobs1@cluster0-e066q.mongodb.net/issuetracker?retryWrites=true&w=majority';
+    const url = process.env.DB_URL || 'mongodb+srv://Skara007:Steve%40Jobs1@cluster0.e066q.mongodb.net/issuetracker?retryWrites=true&w=majority';
     const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
     await client.connect();
     console.log(`Connected to MongoDB at ${url}`);
