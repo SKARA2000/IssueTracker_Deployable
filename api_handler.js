@@ -40,7 +40,7 @@ const resolvers = {
     if(enableCors){
       const origin = process.env.UI_SERVER_ORIGIN || 'http://localhost:8000';
       const methods = 'POST';
-      cors = { origin, methods, credentials: true };
+      cors = { origin, methods };
     }else {
       cors = 'false';
     }
